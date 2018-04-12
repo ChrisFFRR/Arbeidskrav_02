@@ -12,10 +12,13 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.io.FileNotFoundException;
+
 public class WelcomeView {
 
 
     public void showWelcome(Stage stage) {
+
         QuizView quizView = new QuizView();
 
         BorderPane pane = new BorderPane();
@@ -35,7 +38,11 @@ public class WelcomeView {
         startBtn.setDefaultButton(true);
         startBtn.setOnAction(event -> {
 
-            quizView.ShowQuiz(stage);
+            try {
+                quizView.ShowQuiz(stage);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
         });
 
         Button exitBtn = new Button("Exit");
@@ -45,7 +52,6 @@ public class WelcomeView {
         exitBtn.setOnAction(event -> {
             Platform.exit();
         });
-
 
 
         TilePane tileBtns = new TilePane(Orientation.HORIZONTAL);
