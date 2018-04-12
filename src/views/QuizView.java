@@ -87,6 +87,7 @@ public class QuizView {
         submitBtn.setId("submitBtn");
         submitBtn.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
 
+
         submitBtn.setOnAction(event -> {
             int currentQuestion = 1;
             for (int i = 1; i <= questions.size(); i++) {
