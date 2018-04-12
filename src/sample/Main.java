@@ -1,17 +1,20 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.canvas.Canvas;
 import javafx.stage.Stage;
-import views.WelcomeController;
+import views.WelcomeView;
+
+import java.util.ArrayList;
 
 public class Main extends Application {
 
-    QuestionData questions = new QuestionData();
-    ImageData images = new ImageData();
+    private QuestionDataReader questionDataReader = new QuestionDataReader();
+    private ImageDataReader images = new ImageDataReader();
+
+    ArrayList<QuestionModel> questions = questionDataReader.getAllQuestionsAsList();
+
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -20,13 +23,13 @@ public class Main extends Application {
 
 
 
-        System.out.println(images.getNumberOfImages());
+        //System.out.println(questionDataReader.getNumberOfRecords(questions));
 
         primaryStage.setTitle("Arbeidskrav 02");
         primaryStage.setScene(new Scene(root,600,600));
 
         Stage quiz = new Stage();
-        WelcomeController.showWelcome(quiz);
+        WelcomeView.showWelcome(quiz);
 
         quiz.show();
     }

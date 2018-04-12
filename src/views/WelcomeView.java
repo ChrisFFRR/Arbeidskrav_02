@@ -12,7 +12,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class WelcomeController {
+public class WelcomeView {
 
 
     public static void showWelcome(Stage stage) {
@@ -34,7 +34,7 @@ public class WelcomeController {
         startBtn.setDefaultButton(true);
         startBtn.setOnAction(event -> {
 
-            QuizController.ShowQuiz(stage);
+            QuizView.ShowQuiz(stage);
         });
 
         Button exitBtn = new Button("Exit");

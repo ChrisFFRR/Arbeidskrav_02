@@ -14,21 +14,22 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import sample.ImageData;
-import sample.QuestionData;
+import sample.ImageDataReader;
+import sample.QuestionDataReader;
+import sample.QuestionModel;
 
-import java.io.InputStream;
 import java.util.ArrayList;
 
-public class QuizController {
+public class QuizView {
 
 
     public static void ShowQuiz(Stage stage) {
 
-        QuestionData questionData = new QuestionData();
-        ImageData imageData = new ImageData();
+
+        QuestionDataReader questionDataReader = new QuestionDataReader();
+        ImageDataReader imageDataReader = new ImageDataReader();
+        ArrayList<QuestionModel> questions = questionDataReader.getAllQuestionsAsList();
 
 
         BorderPane quizPane = new BorderPane();
@@ -52,6 +53,7 @@ public class QuizController {
         imgShape.setStroke(Color.rgb(46, 16, 52, 0.8));
         imgShape.setEffect(new DropShadow(+30d, 0d, +20d, Color.rgb(46, 16, 52)));
 
+        //flytt til submitBtn.setOnAction???
         imgShape.setFill(new ImagePattern(img));
 
         Label questionLabel = new Label();
@@ -59,7 +61,7 @@ public class QuizController {
         questionLabel.setMaxWidth(550);
         questionLabel.setMaxHeight(350);
 
-        questionLabel.setText("" + questionData.getQuestionNumber(0));
+        questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, 0));
 
         questionArea.getChildren().addAll(imgShape, questionLabel);
 
@@ -80,7 +82,6 @@ public class QuizController {
         textField.setPromptText("Your answer");
 
 
-
         Button submitBtn = new Button("Submit");
         submitBtn.setDefaultButton(true);
         submitBtn.setId("submitBtn");
@@ -88,6 +89,13 @@ public class QuizController {
 
         submitBtn.setOnAction(event -> {
             int currentQuestion = 1;
+            for (int i = 1; i <= questions.size(); i++) {
+                if (i == currentQuestion) {
+                    questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, i));
+                    currentQuestion++;
+                }
+            }
+
 
             textField.getText();
 

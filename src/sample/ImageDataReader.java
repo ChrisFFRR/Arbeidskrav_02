@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ImageData {
+public class ImageDataReader {
     private List<File> imageCollection;
 
-    public ImageData() {
+    public ImageDataReader() {
         imageCollection = new ArrayList<>();
         loadImagesFromDirectory();
     }

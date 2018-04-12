@@ -4,25 +4,36 @@ package sample;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
 
 
-public class QuestionData {
+public class QuestionDataReader {
 
     private ArrayList<QuestionModel> records;
 
 
-    public QuestionData() {
+    public QuestionDataReader() {
         records = new ArrayList<>();
         loadQuestionsFromFile();
     }
 
-    public QuestionModel getQuestionNumber(int i) {
-        return records.get(i);
+    public QuestionModel getQuestionNumber(ArrayList<QuestionModel> list, int i) {
+        return list.get(i);
     }
 
-    public int getNumberOfRecords() {
-        return records.size();
+    public int getNumberOfRecords(ArrayList<QuestionModel> list) {
+        return list.size();
+    }
+
+    public ArrayList<QuestionModel> getAllQuestionsAsList() {
+        ArrayList<QuestionModel> QuestionList = new ArrayList<>();
+        for (QuestionModel model : records) {
+            QuestionList.add(model);
+        }
+
+        return QuestionList;
     }
 
 
@@ -38,7 +49,7 @@ public class QuestionData {
             while ((line = br.readLine()) != null) {
 
                 String[] input = line.split(cvsSplitBy);
-                String questionNum = input[0];
+                int questionNum = Integer.parseInt(input[0]);
                 String question = input[1];
                 String answer = input[2];
 
