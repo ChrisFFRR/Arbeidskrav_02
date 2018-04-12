@@ -1,0 +1,70 @@
+.root {
+    -fx-background-color: linear-gradient(rgba(226,46,250,1) 1%,rgba(38,112,191,1) 43%,rgba(23,65,117,1) 61%,rgba(0,0,2,1) 99%);
+}
+
+@font-face {
+    -fx-font-family: 'lazer84';
+    src: url('././Font/Lazer84.ttf');
+
+    -fx-font-family: 'Streamster';
+    src: url('././Font/Streamster.ttf');
+
+}
+
+#startBtn, #exitBtn, #submitBtn {
+    -fx-font-size: 30px;
+    -fx-background-color: linear-gradient(rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 36%,rgba(58,132,195,1) 54%,rgba(58,139,194,1) 84%,rgba(65,154,214,1) 93%,rgba(38,85,139,1) 100%);
+    -fx-text-fill: black;
+
+}
+
+#startBtn:pressed, #exitBtn:pressed, #submitBtn:pressed {
+    -fx-background-color: linear-gradient(rgba(38,85,139,1) 100%,rgba(65,154,214,1) 93%,rgba(58,139,194,1) 84%,rgba(58,132,195,1) 54%,rgba(97,153,199,1) 36%,rgba(170,197,222,1) 17%,rgba(206,219,233,1) 0%);
+}
+
+/* Welcome screen */
+
+#h1Main {
+    -fx-font-family: 'lazer84';
+    -fx-font-size: 80px;
+    -fx-fill: linear-gradient(rgba(226,46,250,1) 1%,rgba(38,112,191,1) 43%,rgba(23,65,117,1) 61%,rgba(0,0,2,1) 99%);
+    -fx-stroke: black;
+    -fx-stroke-width: 100%;
+
+
+}
+
+#h2Main {
+    -fx-font-family: 'Streamster';
+    -fx-font-size: 60px;
+    -fx-fill: rgb(252, 58, 142);
+    -fx-stroke: black;
+    -fx-underline: true;
+}
+
+/* Quiz Screen*/
+
+#textField {
+    -fx-background-color: linear-gradient(rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 36%, rgba(40, 52, 59, 1) 100%);
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-font-size: 30px;
+    -fx-text-fill: rgba(206,219,233,1);
+}
+
+
+#qLabel {
+    -fx-font-family: 'Streamster';
+    -fx-font-size: 35px;
+    -fx-wrap-text: true;
+    -fx-font-weight: bolder;
+    -fx-text-fill: aqua;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-color: rgba(38,112,191,1);
+    -fx-background-radius: 20,20,20,20;
+    -fx-padding: 20,0,20,20;
+
+
+
+}

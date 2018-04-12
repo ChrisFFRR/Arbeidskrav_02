@@ -1,0 +1,35 @@
+package sample;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class ImageData {
+    private List<File> imageCollection;
+
+    public ImageData() {
+        imageCollection = new ArrayList<>();
+        loadImagesFromDirectory();
+    }
+
+    public void loadImagesFromDirectory() {
+
+        File folder = new File("Resources/Img");
+        File[] fileList = folder.listFiles();
+
+        for (File file : fileList) {
+            imageCollection.add(file);
+        }
+
+    }
+
+    public File getImageNumber(int i) {
+        return imageCollection.get(i);
+    }
+
+    public int getNumberOfImages() {
+        return imageCollection.size();
+    }
+}
+
