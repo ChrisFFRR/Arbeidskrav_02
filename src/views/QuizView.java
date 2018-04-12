@@ -23,13 +23,15 @@ import java.util.ArrayList;
 
 public class QuizView {
 
+    QuestionDataReader questionDataReader = new QuestionDataReader();
+    ImageDataReader imageDataReader = new ImageDataReader();
+    ArrayList<QuestionModel> questions = questionDataReader.getAllQuestionsAsList();
+    int currentQuestion = 0;
+    Label questionLabel = new Label();
+    TextField textField = new TextField();
 
-    public static void ShowQuiz(Stage stage) {
 
-
-        QuestionDataReader questionDataReader = new QuestionDataReader();
-        ImageDataReader imageDataReader = new ImageDataReader();
-        ArrayList<QuestionModel> questions = questionDataReader.getAllQuestionsAsList();
+    public void ShowQuiz(Stage stage) {
 
 
         BorderPane quizPane = new BorderPane();
@@ -56,7 +58,7 @@ public class QuizView {
         //flytt til submitBtn.setOnAction???
         imgShape.setFill(new ImagePattern(img));
 
-        Label questionLabel = new Label();
+
         questionLabel.setId("qLabel");
         questionLabel.setMaxWidth(550);
         questionLabel.setMaxHeight(350);
@@ -75,7 +77,7 @@ public class QuizView {
         quizPane.setBottom(hBoxAnswer);
 
 
-        TextField textField = new TextField();
+
 
         textField.setPrefSize(350.0, 65.0);
         textField.setId("textField");
@@ -89,20 +91,24 @@ public class QuizView {
 
 
         submitBtn.setOnAction(event -> {
-            int currentQuestion = 1;
-            for (int i = 1; i <= questions.size(); i++) {
-                if (i == currentQuestion) {
-                    questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, i));
-                    currentQuestion++;
-                }
-            }
+            setNextQuestion();
 
-
-            textField.getText();
 
 
         });
 
+
         hBoxAnswer.getChildren().addAll(textField, submitBtn);
     }
+
+    public void setNextQuestion() {
+
+        currentQuestion++;
+        if (currentQuestion < questions.size()) {
+            questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, currentQuestion));
+        }
+        textField.getText();
+    }
+
+
 }

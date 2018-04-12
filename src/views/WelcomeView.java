@@ -15,7 +15,8 @@ import javafx.stage.Stage;
 public class WelcomeView {
 
 
-    public static void showWelcome(Stage stage) {
+    public void showWelcome(Stage stage) {
+        QuizView quizView = new QuizView();
 
         BorderPane pane = new BorderPane();
 
@@ -34,7 +35,7 @@ public class WelcomeView {
         startBtn.setDefaultButton(true);
         startBtn.setOnAction(event -> {
 
-            QuizView.ShowQuiz(stage);
+            quizView.ShowQuiz(stage);
         });
 
         Button exitBtn = new Button("Exit");
