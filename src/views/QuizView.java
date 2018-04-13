@@ -28,10 +28,14 @@ public class QuizView {
     private QuestionDataReader questionDataReader = new QuestionDataReader();
     private ImageDataReader imageDataReader = new ImageDataReader();
     private ArrayList<QuestionModel> questions = questionDataReader.getAllQuestionsAsList();
-    private int currentQuestion = 0;
+
+    private Label scoreLabel = new Label();
     private Label questionLabel = new Label();
     private TextField textField = new TextField();
     private Circle imgShape = new Circle(300, 250, 150);
+    HBox hBoxAnswer = new HBox(15);
+
+    private int currentQuestion = 0;
 
 
     public void ShowQuiz(Stage stage) throws FileNotFoundException {
@@ -49,7 +53,7 @@ public class QuizView {
 
         VBox questionArea = new VBox();
         questionArea.setPadding(new Insets(10, 10, 10, 10));
-        questionArea.setSpacing(50.0);
+        questionArea.setSpacing(10.0);
         questionArea.setAlignment(Pos.CENTER);
 
 
@@ -58,6 +62,12 @@ public class QuizView {
         Image img = new Image(new FileInputStream(imageDataReader.getImageNumber(currentQuestion)));
         imgShape.setFill(new ImagePattern(img));
 
+        scoreLabel.setMinWidth(150);
+        scoreLabel.setMaxHeight(150);
+        scoreLabel.setId("scoreLbl");
+        scoreLabel.setAlignment(Pos.CENTER);
+        scoreLabel.setText("0/6");
+
         questionLabel.setId("qLabel");
         questionLabel.setMaxWidth(550);
         questionLabel.setMaxHeight(310);
@@ -65,15 +75,13 @@ public class QuizView {
 
         questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, 0));
 
-        questionArea.getChildren().addAll(imgShape, questionLabel);
-
         quizPane.setCenter(questionArea);
 
-        HBox hBoxAnswer = new HBox(15);
         hBoxAnswer.setAlignment(Pos.BOTTOM_CENTER);
         hBoxAnswer.setPadding(new Insets(0, 0, 40, 0));
 
-        quizPane.setBottom(hBoxAnswer);
+        questionArea.getChildren().addAll(imgShape, scoreLabel, questionLabel, hBoxAnswer);
+        //quizPane.setBottom(hBoxAnswer);
 
         textField.setPrefSize(350.0, 65.0);
         textField.setId("textField");
@@ -92,18 +100,18 @@ public class QuizView {
             }
         });
 
-
         hBoxAnswer.getChildren().addAll(textField, submitBtn);
     }
 
     public void setNextQuestion() throws FileNotFoundException {
-
         currentQuestion++;
         Image img = new Image(new FileInputStream(imageDataReader.getImageNumber(currentQuestion)));
-        if ((currentQuestion < questions.size()) && (currentQuestion < imageDataReader.getNumberOfImages())) {
+
+        if (currentQuestion < questions.size() && currentQuestion < imageDataReader.getNumberOfImages()) {
             questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, currentQuestion));
             imgShape.setFill(new ImagePattern(img));
         }
+
     }
     /*
     public void checkAnswer() {
