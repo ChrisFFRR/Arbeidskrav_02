@@ -5,11 +5,12 @@
 @font-face {
     -fx-font-family: 'lazer84';
     src: url('././Font/Lazer84.ttf');
-
+}
+@font-face {
     -fx-font-family: 'Streamster';
     src: url('././Font/Streamster.ttf');
-
 }
+
 
 #startBtn, #exitBtn, #submitBtn {
     -fx-font-size: 30px;

@@ -40,7 +40,8 @@ public class QuizView {
         BorderPane quizPane = new BorderPane();
 
         Scene scene2 = new Scene(quizPane, 600, 800);
-        scene2.getStylesheets().add("sample/Styles.css");
+        //scene2.getStylesheets().add("sample/Styles.css");
+        scene2.getStylesheets().add(getClass().getResource("/sample/Styles.css").toExternalForm());
         stage.setScene(scene2);
         stage.show();
 
