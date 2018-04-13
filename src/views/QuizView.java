@@ -1,5 +1,6 @@
 package views;
 
+import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -36,6 +37,8 @@ public class QuizView {
     HBox hBoxAnswer = new HBox(15);
 
     private int currentQuestion = 0;
+    private int currentScore = 0;
+    int correct = 0;
 
 
     public void ShowQuiz(Stage stage) throws FileNotFoundException {
@@ -66,7 +69,7 @@ public class QuizView {
         scoreLabel.setMaxHeight(150);
         scoreLabel.setId("scoreLbl");
         scoreLabel.setAlignment(Pos.CENTER);
-        scoreLabel.setText("0/6");
+
 
         questionLabel.setId("qLabel");
         questionLabel.setMaxWidth(550);
@@ -94,7 +97,13 @@ public class QuizView {
 
         submitBtn.setOnAction(event -> {
             try {
+                // if((questionDataReader.checkAnswerNumber() = true))
+
+                //correct++;
+                validateAnswer();
                 setNextQuestion();
+
+
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
@@ -103,21 +112,35 @@ public class QuizView {
         hBoxAnswer.getChildren().addAll(textField, submitBtn);
     }
 
+
     public void setNextQuestion() throws FileNotFoundException {
-        questionDataReader.checkAnswerNumber(questions, textField, currentQuestion);
-        currentQuestion++;
+
         Image img = new Image(new FileInputStream(imageDataReader.getImageNumber(currentQuestion)));
 
-        if (currentQuestion < questions.size() && currentQuestion < imageDataReader.getNumberOfImages()) {
+        if (currentQuestion < questions.size() || currentQuestion < imageDataReader.getNumberOfImages()) {
+
+
             questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, currentQuestion));
             imgShape.setFill(new ImagePattern(img));
         }
 
 
-
     }
 
+    public void validateAnswer() {
 
+        boolean isCorrect = questionDataReader.checkAnswerNumber(questions, textField, currentQuestion);
 
+        if (isCorrect) {
+            correct++;
+            currentScore++;
+            currentQuestion++;
+            scoreLabel.setText(correct + "/" + currentScore);
+        } else {
+            currentScore++;
+            currentQuestion++;
+            scoreLabel.setText(correct + "/" + currentScore);
+        }
+    }
 
 }

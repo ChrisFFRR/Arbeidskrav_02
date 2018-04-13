@@ -2,6 +2,7 @@ package sample;
 
 
 import javafx.scene.control.TextField;
+import views.QuizView;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -40,9 +41,19 @@ public class QuestionDataReader {
         }
     }
 
+    /*
+    public void updateScore(ArrayList<QuestionModel> questions, TextField textField) {
 
+        if(textField.getText().equalsIgnoreCase(questions))
+            scoreLabel.setText(correct + "/" + currentQuestion);
+        questionDataReader.
+    }
+    /*
+    public void addScore(int ) {
+        if(list)
+            currednt
 
-
+    }*/
 
     public int getNumberOfRecords(ArrayList<QuestionModel> list) {
         return list.size();
@@ -50,18 +61,13 @@ public class QuestionDataReader {
 
     public ArrayList<QuestionModel> getAllQuestionsAsList() {
         ArrayList<QuestionModel> QuestionList = new ArrayList<>();
+
         for (QuestionModel model : records) {
             QuestionList.add(model);
         }
 
         return QuestionList;
     }
-/*
-    public boolean checkAnswer(TextField text, int i ) {
-        if(text.getText().equalsIgnoreCase(questionModel.getAnswer()))
-    }
-
-    */
 
 
     public void loadQuestionsFromFile() {
