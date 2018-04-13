@@ -100,7 +100,7 @@ public class QuizView {
 
         currentQuestion++;
         Image img = new Image(new FileInputStream(imageDataReader.getImageNumber(currentQuestion)));
-        if (currentQuestion < questions.size()) {
+        if ((currentQuestion < questions.size()) && (currentQuestion < imageDataReader.getNumberOfImages())) {
             questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, currentQuestion));
             imgShape.setFill(new ImagePattern(img));
         }
