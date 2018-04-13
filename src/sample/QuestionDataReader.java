@@ -1,6 +1,8 @@
 package sample;
 
 
+import javafx.scene.control.TextField;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -12,6 +14,7 @@ import java.util.List;
 public class QuestionDataReader {
 
     private ArrayList<QuestionModel> records;
+    //private QuestionModel questionModel;
 
 
     public QuestionDataReader() {
@@ -22,6 +25,24 @@ public class QuestionDataReader {
     public QuestionModel getQuestionNumber(ArrayList<QuestionModel> list, int i) {
         return list.get(i);
     }
+
+    public boolean checkAnswerNumber(ArrayList<QuestionModel> list, TextField text, int i) {
+        String answer = list.get(i).getAnswer();
+        System.out.println(answer);
+        if (text.getText().equalsIgnoreCase(answer)) {
+            text.clear();
+            System.out.println("true");
+            return true;
+        } else {
+            text.clear();
+            System.out.println("false");
+            return false;
+        }
+    }
+
+
+
+
 
     public int getNumberOfRecords(ArrayList<QuestionModel> list) {
         return list.size();
@@ -35,6 +56,12 @@ public class QuestionDataReader {
 
         return QuestionList;
     }
+/*
+    public boolean checkAnswer(TextField text, int i ) {
+        if(text.getText().equalsIgnoreCase(questionModel.getAnswer()))
+    }
+
+    */
 
 
     public void loadQuestionsFromFile() {

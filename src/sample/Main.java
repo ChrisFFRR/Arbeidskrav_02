@@ -10,10 +10,10 @@ import java.util.ArrayList;
 
 public class Main extends Application {
 
-    //private QuestionDataReader questionDataReader = new QuestionDataReader();
-    private ImageDataReader images = new ImageDataReader();
+    private QuestionDataReader questionDataReader = new QuestionDataReader();
+    //private ImageDataReader images = new ImageDataReader();
 
-    //ArrayList<QuestionModel> questions = questionDataReader.getAllQuestionsAsList();
+    ArrayList<QuestionModel> questions = questionDataReader.getAllQuestionsAsList();
 
 
     @Override
@@ -24,7 +24,7 @@ public class Main extends Application {
 
 
 
-        System.out.println(images.getImageNumber(0));
+        //System.out.println(questionDataReader.getAnswerNumber(questions, 1));
 
         primaryStage.setTitle("Arbeidskrav 02");
         primaryStage.setScene(new Scene(root,600,600));

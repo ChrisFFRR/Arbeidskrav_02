@@ -104,6 +104,7 @@ public class QuizView {
     }
 
     public void setNextQuestion() throws FileNotFoundException {
+        questionDataReader.checkAnswerNumber(questions, textField, currentQuestion);
         currentQuestion++;
         Image img = new Image(new FileInputStream(imageDataReader.getImageNumber(currentQuestion)));
 
@@ -112,13 +113,11 @@ public class QuizView {
             imgShape.setFill(new ImagePattern(img));
         }
 
-    }
-    /*
-    public void checkAnswer() {
-        if(textField.getText().equalsIgnoreCase(questions)
+
 
     }
-    */
+
+
 
 
 }
