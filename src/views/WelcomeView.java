@@ -11,7 +11,6 @@ import javafx.scene.layout.TilePane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
 import java.io.FileNotFoundException;
 
 public class WelcomeView {
@@ -22,12 +21,11 @@ public class WelcomeView {
         QuizView quizView = new QuizView();
 
         BorderPane pane = new BorderPane();
-
         pane.setPadding(new Insets(10, 10, 10, 10));
 
 
         Scene scene1 = new Scene(pane, 600, 800);
-        scene1.getStylesheets().add("sample/Styles.css");
+        scene1.getStylesheets().add(getClass().getResource("/sample/Styles.css").toExternalForm());
         stage.setScene(scene1);
 
 

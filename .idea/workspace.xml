@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Added pictures to QuizView, is now synced with questions on buttonClick">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Img/MGS2SnakePP.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Img/04MGS2SnakePP.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Img/Resident-Evil-1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Img/05Resident-Evil-1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Img/backtothefuture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Img/03backtothefuture.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Img/hasselhoff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Img/02Hasselhoff.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Img/nes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Img/sega.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Img/01sega.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Img/theterminator.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Img/06theterminator.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/Img/MGS2SnakePP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/Img/Resident-Evil-1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/Img/backtothefuture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/Img/hasselhoff.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/Img/nes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/Img/sega.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/Img/theterminator.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/sample/Styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/sample/Styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ImageDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ImageDataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/QuizView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/QuizView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/WelcomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/WelcomeView.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,8 +105,8 @@
       <file leaf-file-name="Styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -205,7 +226,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-33" />
     <option name="y" value="121" />
     <option name="width" value="1440" />
@@ -422,7 +443,7 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1523028070203" duration="57027000" />
-      <workItem from="1523562803114" duration="6641000" />
+      <workItem from="1523562803114" duration="6408000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1523562851050</created>
@@ -445,22 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523565398004</updated>
     </task>
-    <task id="LOCAL-00004" summary="Added pictures to QuizView, is now synced with questions on buttonClick">
-      <created>1523569354747</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1523569354747</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64970000" />
+    <option name="totallyTimeSpent" value="64737000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="-33" y="121" width="1440" height="877" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -738,8 +751,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
