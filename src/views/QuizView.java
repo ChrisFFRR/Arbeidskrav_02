@@ -117,13 +117,17 @@ public class QuizView {
 
     public void setNextQuestion() throws FileNotFoundException {
 
+        EndGameView endGameView = new EndGameView();
+        Stage stage = new Stage();
+
         Image img = new Image(new FileInputStream(imageDataReader.getImageNumber(currentQuestion)));
 
-        if (currentQuestion < questions.size() || currentQuestion < imageDataReader.getNumberOfImages()) {
-
-
+        if (currentQuestion < questions.size() - 1 || currentQuestion < imageDataReader.getNumberOfImages() - 1) {
             questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, currentQuestion));
             imgShape.setFill(new ImagePattern(img));
+        } else {
+            endGameView.showEndScreen(stage);
+            stage.show();
         }
 
 
@@ -144,7 +148,6 @@ public class QuizView {
             scoreLabel.setText(correct + "/" + currentScore);
         }
     }
-
 
 
 }
