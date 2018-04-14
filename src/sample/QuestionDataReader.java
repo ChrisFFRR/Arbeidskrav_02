@@ -19,7 +19,7 @@ public class QuestionDataReader {
 
 
     public QuestionDataReader() {
-        records = new ArrayList<>();
+        this.records = new ArrayList<>();
         loadQuestionsFromFile();
     }
 

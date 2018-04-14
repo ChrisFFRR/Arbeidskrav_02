@@ -10,7 +10,7 @@ public class ImageDataReader {
     private List<File> imageCollection;
 
     public ImageDataReader() {
-        imageCollection = new ArrayList<>();
+        this.imageCollection = new ArrayList<>();
         loadImagesFromDirectory();
     }
 

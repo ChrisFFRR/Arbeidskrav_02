@@ -34,7 +34,7 @@ public class QuizView {
     private Label questionLabel = new Label();
     private TextField textField = new TextField();
     private Circle imgShape = new Circle(300, 250, 150);
-    HBox hBoxAnswer = new HBox(15);
+    private HBox hBoxAnswer = new HBox(15);
 
     private int currentQuestion = 0;
     private int currentScore = 0;
@@ -95,6 +95,8 @@ public class QuizView {
         submitBtn.setId("submitBtn");
         submitBtn.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
 
+        hBoxAnswer.getChildren().addAll(textField, submitBtn);
+
         submitBtn.setOnAction(event -> {
             try {
                 // if((questionDataReader.checkAnswerNumber() = true))
@@ -109,7 +111,7 @@ public class QuizView {
             }
         });
 
-        hBoxAnswer.getChildren().addAll(textField, submitBtn);
+
     }
 
 
@@ -142,5 +144,7 @@ public class QuizView {
             scoreLabel.setText(correct + "/" + currentScore);
         }
     }
+
+
 
 }

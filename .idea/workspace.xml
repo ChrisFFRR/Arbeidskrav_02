@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="opprydding">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Gjort klart til resultatskjerm">
+      <change afterPath="$PROJECT_DIR$/src/views/EndGameView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/Questions/questions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/Questions/questions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ImageDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ImageDataReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/QuestionDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/QuestionDataReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/QuizView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/QuizView.java" afterDir="false" />
     </list>
@@ -66,8 +67,20 @@
       <file leaf-file-name="WelcomeView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/WelcomeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="-219">
               <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EndGameView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/EndGameView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,7 +115,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="281">
               <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -123,10 +136,11 @@
       <file leaf-file-name="ImageDataReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/ImageDataReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="131">
+              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
                 <element signature="e#755#756#0" expanded="true" />
               </folding>
             </state>
@@ -136,8 +150,8 @@
       <file leaf-file-name="QuestionDataReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/QuestionDataReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+            <state relative-caret-position="48">
+              <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#464#465#0" expanded="true" />
@@ -158,11 +172,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuizView.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuizView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/QuizView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="101" column="28" lean-forward="true" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
+            <state relative-caret-position="784">
+              <caret line="147" selection-start-line="147" selection-end-line="147" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -206,7 +220,6 @@
         <option value="$PROJECT_DIR$/src/sample/ImageData.java" />
         <option value="$PROJECT_DIR$/src/sample/QuestionData.java" />
         <option value="$PROJECT_DIR$/src/views/QuizController.java" />
-        <option value="$PROJECT_DIR$/src/sample/ImageDataReader.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/views/WelcomeView.java" />
         <option value="$PROJECT_DIR$/src/sample/Styles.css" />
@@ -214,7 +227,9 @@
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/Resources/Questions/questions.csv" />
         <option value="$PROJECT_DIR$/src/sample/QuestionDataReader.java" />
+        <option value="$PROJECT_DIR$/src/sample/ImageDataReader.java" />
         <option value="$PROJECT_DIR$/src/views/QuizView.java" />
+        <option value="$PROJECT_DIR$/src/views/EndGameView.java" />
       </list>
     </option>
   </component>
@@ -226,7 +241,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="35" />
+    <option name="x" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
@@ -424,7 +440,7 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1523028070203" duration="57027000" />
       <workItem from="1523562803114" duration="6408000" />
-      <workItem from="1523619135251" duration="19149000" />
+      <workItem from="1523619135251" duration="21115000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1523562851050</created>
@@ -475,14 +491,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523630580979</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Spørsmål + score ferdig?">
+      <created>1523661032111</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523661032111</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83886000" />
+    <option name="totallyTimeSpent" value="85852000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="35" width="1440" height="877" extended-state="0" />
+    <frame x="22" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -495,11 +518,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7083333" visible="true" weight="0.21793275" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7083333" visible="true" weight="0.21793275" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5700637" visible="true" weight="0.24930556" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5700637" visible="true" weight="0.24930556" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.42993632" side_tool="true" weight="0.24930556" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -568,7 +591,8 @@
     <MESSAGE value="Added pictures to QuizView, is now synced with questions on buttonClick" />
     <MESSAGE value=".." />
     <MESSAGE value="lagt til sjekk for input for spørsmål." />
-    <option name="LAST_COMMIT_MESSAGE" value="lagt til sjekk for input for spørsmål." />
+    <MESSAGE value="Spørsmål + score ferdig?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spørsmål + score ferdig?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -619,6 +643,7 @@
           <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
             <element signature="e#755#756#0" expanded="true" />
           </folding>
         </state>
@@ -692,6 +717,7 @@
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
             <element signature="e#755#756#0" expanded="true" />
           </folding>
         </state>
@@ -868,41 +894,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/WelcomeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Questions/questions.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="104" selection-start-line="5" selection-start-column="104" selection-end-line="5" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ImageDataReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/QuestionDataReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+        <state relative-caret-position="48">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#464#465#0" expanded="true" />
@@ -940,10 +935,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/WelcomeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-219">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ImageDataReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/QuizView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="101" column="28" lean-forward="true" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
+        <state relative-caret-position="784">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/EndGameView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
