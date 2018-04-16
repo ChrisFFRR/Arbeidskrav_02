@@ -79,6 +79,7 @@ public class QuizView {
         scoreLabel.setMaxHeight(150);
         scoreLabel.setId("scoreLbl");
         scoreLabel.setAlignment(Pos.CENTER);
+        scoreLabel.setText("0/0");
 
 
         questionLabel.setId("qLabel");
