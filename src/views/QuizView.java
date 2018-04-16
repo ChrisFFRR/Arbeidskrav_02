@@ -18,7 +18,6 @@ import javafx.stage.Stage;
 import sample.ImageDataReader;
 import sample.QuestionDataReader;
 import sample.QuestionModel;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -55,7 +54,6 @@ public class QuizView {
 
     public void ShowQuiz(Stage stage) throws FileNotFoundException {
 
-
         BorderPane quizPane = new BorderPane();
 
         Scene scene2 = new Scene(quizPane, 600, 800);
@@ -71,7 +69,6 @@ public class QuizView {
         questionArea.setSpacing(10.0);
         questionArea.setAlignment(Pos.CENTER);
 
-
         imgShape.setStroke(Color.rgb(46, 16, 52, 0.8));
         imgShape.setEffect(new DropShadow(+30d, 0d, +20d, Color.rgb(46, 16, 52)));
         Image img = new Image(new FileInputStream(imageDataReader.getImageNumber(currentQuestion)));
@@ -82,7 +79,6 @@ public class QuizView {
         scoreLabel.setId("scoreLbl");
         scoreLabel.setAlignment(Pos.CENTER);
         scoreLabel.setText("0/0");
-
 
         questionLabel.setId("qLabel");
         questionLabel.setMaxWidth(550);
@@ -97,7 +93,6 @@ public class QuizView {
         hBoxAnswer.setPadding(new Insets(0, 0, 40, 0));
 
         questionArea.getChildren().addAll(imgShape, scoreLabel, questionLabel, hBoxAnswer);
-
 
         textField.setPrefSize(350.0, 65.0);
         textField.setId("textField");
@@ -116,13 +111,11 @@ public class QuizView {
                 validateAnswer();
                 setNextQuestion(stage);
 
-
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
         });
     }
-
 
     public void setNextQuestion(Stage stage) throws FileNotFoundException {
 
@@ -139,7 +132,6 @@ public class QuizView {
             imgShape.setFill(new ImagePattern(img));
         } else {
             endGameView.showEndScreen(stage, this);
-
         }
     }
 
