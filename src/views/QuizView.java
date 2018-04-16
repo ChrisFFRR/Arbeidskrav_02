@@ -1,6 +1,5 @@
 package views;
 
-import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -37,9 +36,20 @@ public class QuizView {
     private HBox hBoxAnswer = new HBox(15);
 
     private int currentQuestion = 0;
-    private int currentScore = 0;
+    private int questionNumber = 0;
     int correct = 0;
 
+    public int getCurrentQuestion() {
+        return currentQuestion;
+    }
+
+    public int getQuestionNumber() {
+        return questionNumber;
+    }
+
+    public int getCorrect() {
+        return correct;
+    }
 
     public void ShowQuiz(Stage stage) throws FileNotFoundException {
 
@@ -47,7 +57,7 @@ public class QuizView {
         BorderPane quizPane = new BorderPane();
 
         Scene scene2 = new Scene(quizPane, 600, 800);
-        
+
         scene2.getStylesheets().add(getClass().getResource("/sample/Styles.css").toExternalForm());
         stage.setScene(scene2);
         stage.show();
@@ -99,38 +109,35 @@ public class QuizView {
 
         submitBtn.setOnAction(event -> {
             try {
-                // if((questionDataReader.checkAnswerNumber() = true))
-
 
                 validateAnswer();
-                setNextQuestion();
+                setNextQuestion(stage);
 
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
         });
-
-
     }
 
 
-    public void setNextQuestion() throws FileNotFoundException {
+    public void setNextQuestion(Stage stage) throws FileNotFoundException {
 
         EndGameView endGameView = new EndGameView();
-        Stage stage = new Stage();
 
-        Image img = new Image(new FileInputStream(imageDataReader.getImageNumber(currentQuestion)));
+        int numberOfImg = imageDataReader.getNumberOfImages();
+        boolean hasMoreQuestions = currentQuestion < questions.size();
+        boolean hasMoreImages = currentQuestion < numberOfImg;
 
-        if (currentQuestion < questions.size()-1 || currentQuestion < imageDataReader.getNumberOfImages()-1) {
+
+        if (hasMoreQuestions && hasMoreImages) {
+            Image img = new Image(new FileInputStream(imageDataReader.getImageNumber(currentQuestion)));
             questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, currentQuestion));
             imgShape.setFill(new ImagePattern(img));
         } else {
-            endGameView.showEndScreen(stage);
+            endGameView.showEndScreen(stage, this);
 
         }
-
-
     }
 
     public void validateAnswer() {
@@ -139,13 +146,13 @@ public class QuizView {
 
         if (isCorrect) {
             correct++;
-            currentScore++;
+            questionNumber++;
             currentQuestion++;
-            scoreLabel.setText(correct + "/" + currentScore);
+            scoreLabel.setText(correct + "/" + questionNumber);
         } else {
-            currentScore++;
+            questionNumber++;
             currentQuestion++;
-            scoreLabel.setText(correct + "/" + currentScore);
+            scoreLabel.setText(correct + "/" + questionNumber);
         }
     }
 

@@ -29,14 +29,12 @@ public class QuestionDataReader {
 
     public boolean checkAnswerNumber(ArrayList<QuestionModel> list, TextField text, int i) {
         String answer = list.get(i).getAnswer();
-        System.out.println(answer);
+
         if (text.getText().equalsIgnoreCase(answer)) {
             text.clear();
-            System.out.println("true");
             return true;
         } else {
             text.clear();
-            System.out.println("false");
             return false;
         }
     }
@@ -99,6 +97,9 @@ public class QuestionDataReader {
 
 
 }
+
+
+
 
 
 

@@ -11,14 +11,14 @@ import javafx.scene.layout.TilePane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import java.io.FileNotFoundException;
 
 public class EndGameView {
 
-    public void showEndScreen(Stage stage) {
+    public void showEndScreen(Stage stage, QuizView quizView) {
 
-        QuizView quizView = new QuizView();
 
         BorderPane endPane = new BorderPane();
 
@@ -36,7 +36,7 @@ public class EndGameView {
         startBtn.setOnAction(event -> {
 
             try {
-                quizView.ShowQuiz(stage);
+                new QuizView().ShowQuiz(stage);
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
@@ -62,7 +62,8 @@ public class EndGameView {
         Text h1Main = new Text("Game Over");
         h1Main.setId("h1Main");
 
-        Text h2Main = new Text("Score :");
+
+        Text h2Main = new Text("Score :" + getResultString(quizView));
         h2Main.setId("h2Main");
 
         VBox headLine = new VBox();
@@ -74,6 +75,11 @@ public class EndGameView {
         tileBtns.getChildren().addAll(startBtn, exitBtn);
 
         endPane.setCenter(headLine);
+
+    }
+
+    public String getResultString(QuizView quizView) {
+        return quizView.getCorrect() + "/" + quizView.getQuestionNumber() + "\nThanks for playing";
 
     }
 
