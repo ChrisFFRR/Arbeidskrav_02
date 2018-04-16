@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/***
+ * Klasse for å lese og skrive bilder i Resources/Img til disk.
+ */
+
 
 public class ImageDataReader {
     private List<File> imageCollection;

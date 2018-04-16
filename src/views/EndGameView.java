@@ -11,7 +11,13 @@ import javafx.scene.layout.TilePane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import javafx.stage.Window;
+
+/**
+ * view for resultatskjerm
+ * har i tillegg til Stage, Quizview som parameter for at man bruker samme instanse av Quizview
+ * for å ta vare på score via getResultTostring() metoden.
+ */
+
 
 import java.io.FileNotFoundException;
 
@@ -24,7 +30,7 @@ public class EndGameView {
 
         Scene scene3 = new Scene(endPane, 600, 800);
 
-        scene3.getStylesheets().add(getClass().getResource("/sample/Styles.css").toExternalForm());
+        scene3.getStylesheets().add(getClass().getResource("/CSS/Styles.css").toExternalForm());
         stage.setScene(scene3);
         stage.show();
 
@@ -63,7 +69,7 @@ public class EndGameView {
         h1Main.setId("h1Main");
 
 
-        Text h2Main = new Text("Score :" + getResultString(quizView));
+        Text h2Main = new Text("Score :" + getResultToString(quizView));
         h2Main.setId("h2Main");
 
         VBox headLine = new VBox();
@@ -78,7 +84,7 @@ public class EndGameView {
 
     }
 
-    public String getResultString(QuizView quizView) {
+    public String getResultToString(QuizView quizView) {
         return quizView.getCorrect() + "/" + quizView.getQuestionNumber() + "\nThanks for playing";
 
     }

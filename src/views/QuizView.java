@@ -23,6 +23,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
+/**
+ * view for selve quizzen, inneholder også metode for å sjekke at svar er riktig eller feil, samt metode
+ * for å oppdatere nytt spørsmål og bilde.
+ */
+
 public class QuizView {
 
     private QuestionDataReader questionDataReader = new QuestionDataReader();
@@ -55,7 +60,7 @@ public class QuizView {
 
         Scene scene2 = new Scene(quizPane, 600, 800);
 
-        scene2.getStylesheets().add(getClass().getResource("/sample/Styles.css").toExternalForm());
+        scene2.getStylesheets().add(getClass().getResource("/CSS/Styles.css").toExternalForm());
         stage.setScene(scene2);
         stage.show();
 
@@ -153,6 +158,4 @@ public class QuizView {
             scoreLabel.setText(correct + "/" + questionNumber);
         }
     }
-
-
 }

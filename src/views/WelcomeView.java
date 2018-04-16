@@ -13,6 +13,10 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import java.io.FileNotFoundException;
 
+/***
+ *Main metode som setter i gang alt. View for velkomstskjerm
+ */
+
 public class WelcomeView {
 
 
@@ -25,7 +29,7 @@ public class WelcomeView {
 
 
         Scene scene1 = new Scene(pane, 600, 800);
-        scene1.getStylesheets().add(getClass().getResource("/sample/Styles.css").toExternalForm());
+        scene1.getStylesheets().add(getClass().getResource("/CSS/Styles.css").toExternalForm());
         stage.setScene(scene1);
 
 

@@ -2,20 +2,25 @@ package sample;
 
 
 import javafx.scene.control.TextField;
-import views.QuizView;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
+
+/***
+ * Klasse som leser spørsmål fra CSV-fil.
+ * input blir splittet med ","
+ * Struktur på csv fil er "spørsmål-index, spørsmål, svar"
+ *
+ *
+ *
+ */
 
 
 public class QuestionDataReader {
 
     private ArrayList<QuestionModel> records;
-    //private QuestionModel questionModel;
 
 
     public QuestionDataReader() {
@@ -39,30 +44,16 @@ public class QuestionDataReader {
         }
     }
 
-    /*
-    public void updateScore(ArrayList<QuestionModel> questions, TextField textField) {
-
-        if(textField.getText().equalsIgnoreCase(questions))
-            scoreLabel.setText(correct + "/" + currentQuestion);
-        questionDataReader.
-    }
-    /*
-    public void addScore(int ) {
-        if(list)
-            currednt
-
-    }*/
-
+/*
     public int getNumberOfRecords(ArrayList<QuestionModel> list) {
         return list.size();
     }
+    */
 
     public ArrayList<QuestionModel> getAllQuestionsAsList() {
         ArrayList<QuestionModel> QuestionList = new ArrayList<>();
 
-        for (QuestionModel model : records) {
-            QuestionList.add(model);
-        }
+        QuestionList.addAll(records);
 
         return QuestionList;
     }

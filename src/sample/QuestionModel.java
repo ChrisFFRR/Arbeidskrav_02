@@ -1,5 +1,9 @@
 package sample;
 
+/**
+ * klasse for å behandle spørsmål og svar
+ */
+
 public class QuestionModel {
     private int questionNum;
     private String question;
@@ -10,7 +14,7 @@ public class QuestionModel {
         this.question = question;
         this.answer = answer;
     }
-
+/*
     public int getQuestionNum() {
         return questionNum;
     }
@@ -18,6 +22,7 @@ public class QuestionModel {
     public String getQuestion() {
         return question;
     }
+    */
 
     public String getAnswer() {
         return answer;

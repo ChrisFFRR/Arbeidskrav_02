@@ -4,11 +4,11 @@
 
 @font-face {
     -fx-font-family: 'lazer84';
-    src: url('././Font/Lazer84.ttf');
+    src: url('../../Resources/Font/Lazer84.ttf');
 }
 @font-face {
     -fx-font-family: 'Streamster';
-    src: url('././Font/Streamster.ttf');
+    src: url('../../Resources/Font/Streamster.ttf');
 }
 
 
