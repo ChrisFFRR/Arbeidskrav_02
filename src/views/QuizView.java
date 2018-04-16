@@ -47,7 +47,7 @@ public class QuizView {
         BorderPane quizPane = new BorderPane();
 
         Scene scene2 = new Scene(quizPane, 600, 800);
-        //scene2.getStylesheets().add("sample/Styles.css");
+        
         scene2.getStylesheets().add(getClass().getResource("/sample/Styles.css").toExternalForm());
         stage.setScene(scene2);
         stage.show();
@@ -101,7 +101,7 @@ public class QuizView {
             try {
                 // if((questionDataReader.checkAnswerNumber() = true))
 
-                //correct++;
+
                 validateAnswer();
                 setNextQuestion();
 
@@ -122,12 +122,12 @@ public class QuizView {
 
         Image img = new Image(new FileInputStream(imageDataReader.getImageNumber(currentQuestion)));
 
-        if (currentQuestion < questions.size() - 1 || currentQuestion < imageDataReader.getNumberOfImages() - 1) {
+        if (currentQuestion < questions.size()-1 || currentQuestion < imageDataReader.getNumberOfImages()-1) {
             questionLabel.setText("" + questionDataReader.getQuestionNumber(questions, currentQuestion));
             imgShape.setFill(new ImagePattern(img));
         } else {
             endGameView.showEndScreen(stage);
-            stage.show();
+
         }
 
 
