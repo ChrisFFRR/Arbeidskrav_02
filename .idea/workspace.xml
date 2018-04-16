@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Arbeidskrav_02_02" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/sample/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/sample/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Arbeidskrav_02_02/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/QuestionDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/QuestionDataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/EndGameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/EndGameView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/QuizView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/QuizView.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -65,10 +66,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WelcomeView.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WelcomeView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/WelcomeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
+            <state relative-caret-position="300">
               <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -77,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EndGameView.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EndGameView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/EndGameView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="81" column="79" selection-start-line="81" selection-start-column="79" selection-end-line="81" selection-end-column="79" />
+            <state relative-caret-position="465">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,16 +133,10 @@
       <file leaf-file-name="QuizView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/QuizView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1867">
-              <caret line="153" column="30" lean-forward="true" selection-start-line="153" selection-start-column="11" selection-end-line="153" selection-end-column="30" />
+            <state relative-caret-position="585">
+              <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1438#1439#0" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1432#1433#0" expanded="true" />
-                <element signature="e#1469#1470#0" expanded="true" />
-                <element signature="e#1578#1579#0" expanded="true" />
-                <element signature="e#1608#1609#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,8 +198,8 @@
         <option value="$PROJECT_DIR$/src/sample/ImageDataReader.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/QuestionDataReader.java" />
-        <option value="$PROJECT_DIR$/src/views/QuizView.java" />
         <option value="$PROJECT_DIR$/src/views/EndGameView.java" />
+        <option value="$PROJECT_DIR$/src/views/QuizView.java" />
       </list>
     </option>
   </component>
@@ -216,8 +211,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-27" />
-    <option name="y" value="50" />
+    <option name="x" value="19" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="872" />
   </component>
@@ -236,40 +231,6 @@
             <path>
               <item name="Arbeidskrav_02_02" type="b2602c69:ProjectViewProjectNode" />
               <item name="Arbeidskrav_02_02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arbeidskrav_02_02" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arbeidskrav_02_02" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arbeidskrav_02_02" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arbeidskrav_02_02" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arbeidskrav_02_02" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arbeidskrav_02_02" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Questions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arbeidskrav_02_02" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arbeidskrav_02_02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arbeidskrav_02_02" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arbeidskrav_02_02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Arbeidskrav_02_02" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Arbeidskrav_02_02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -303,7 +264,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -427,7 +388,7 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1523028070203" duration="57027000" />
       <workItem from="1523562803114" duration="6408000" />
-      <workItem from="1523619135251" duration="30989000" />
+      <workItem from="1523619135251" duration="31536000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1523562851050</created>
@@ -506,19 +467,32 @@
       <option name="project" value="LOCAL" />
       <updated>1523864113997</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="såogsiferdig">
+      <created>1523895955588</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1523895955588</updated>
+    </task>
+    <task id="LOCAL-00013" summary="såogsiferdig">
+      <created>1523896080742</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1523896080742</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95726000" />
+    <option name="totallyTimeSpent" value="96273000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-22" y="138" width="1440" height="872" extended-state="0" />
-    <editor active="true" />
+    <frame x="19" y="23" width="1440" height="872" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4888889" weight="0.32581455" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4888889" visible="true" weight="0.32581455" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -526,11 +500,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7083333" visible="true" weight="0.21929824" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7083333" weight="0.21929824" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5700637" visible="true" weight="0.24930556" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5700637" visible="true" weight="0.24930556" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283208" />
       <window_info id="Structure" order="1" sideWeight="0.42993632" side_tool="true" weight="0.24930556" />
@@ -602,20 +576,21 @@
     <MESSAGE value="Spørsmål + score ferdig?" />
     <MESSAGE value="Gjort klart til resultatskjerm" />
     <MESSAGE value="resultatskjerm oppdatert" />
-    <option name="LAST_COMMIT_MESSAGE" value="resultatskjerm oppdatert" />
+    <MESSAGE value="såogsiferdig" />
+    <option name="LAST_COMMIT_MESSAGE" value="såogsiferdig" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <condition expression="!isCorrect" language="JAVA" />
-          <url />
-          <line>146</line>
+          <url>file://$PROJECT_DIR$/src/views/QuizView.java</url>
+          <line>144</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -671,12 +646,6 @@
           <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1438#1439#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -787,12 +756,6 @@
           <caret line="94" column="38" lean-forward="true" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1438#1439#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -949,16 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/WelcomeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -993,22 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/QuizView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1867">
-          <caret line="153" column="30" lean-forward="true" selection-start-line="153" selection-start-column="11" selection-end-line="153" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1438#1439#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/QuestionDataReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1021,8 +958,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/EndGameView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="81" column="79" selection-start-line="81" selection-start-column="79" selection-end-line="81" selection-end-column="79" />
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/QuizView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/WelcomeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1035,7 +992,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>JavaFXApp</last-edited>
+          <last-edited>Arbeidskrav_02_02</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

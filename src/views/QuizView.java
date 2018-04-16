@@ -39,9 +39,6 @@ public class QuizView {
     private int questionNumber = 0;
     int correct = 0;
 
-    public int getCurrentQuestion() {
-        return currentQuestion;
-    }
 
     public int getQuestionNumber() {
         return questionNumber;
@@ -95,7 +92,7 @@ public class QuizView {
         hBoxAnswer.setPadding(new Insets(0, 0, 40, 0));
 
         questionArea.getChildren().addAll(imgShape, scoreLabel, questionLabel, hBoxAnswer);
-        //quizPane.setBottom(hBoxAnswer);
+
 
         textField.setPrefSize(350.0, 65.0);
         textField.setId("textField");
