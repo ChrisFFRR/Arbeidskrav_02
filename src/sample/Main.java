@@ -20,19 +20,18 @@ import views.WelcomeView;
  *
  */
 
-
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage)  {
 
-        Parent root = new Parent() {
-        };
+        //Parent root = new Parent() {
+        //};
         WelcomeView welcomeView = new WelcomeView();
 
 
-        primaryStage.setTitle("Arbeidskrav 02");
-        primaryStage.setScene(new Scene(root, 600, 600));
+       // primaryStage.setTitle("Arbeidskrav 02");
+       // primaryStage.setScene(new Scene(root, 600, 600));
 
         Stage quiz = new Stage();
         welcomeView.showWelcome(quiz);
